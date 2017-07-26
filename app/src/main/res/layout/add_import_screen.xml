@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managerLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/textViewValue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Value:"
+        android:textSize="25dp"
+        android:layout_margin="7dp"
+        />
+    <EditText
+        android:id="@+id/textViewAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewValue"
+        android:hint="Author:"
+        android:textSize="25dp"
+        android:layout_margin="7dp"
+        />
+    <EditText
+        android:id="@+id/textViewType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewAuthor"
+        android:hint="Type:"
+        android:textSize="25dp"
+        android:layout_margin="7dp"
+        />
+    <EditText
+        android:id="@+id/textViewDay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewType"
+        android:hint="Day:"
+        android:textSize="25dp"
+        android:layout_margin="7dp"
+        />
+    <ImageButton
+        android:id="@+id/imgeButtonImport"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="100dp"
+        tools:text="Import"
+        tools:textAlignment="gravity"
+        android:src="@drawable/ic_import_export_black_36dp"
+        />
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        tools:text="Import"
+        tools:textAlignment="gravity"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@+id/imgeButtonImport"
+        android:layout_marginRight="100dp"
+
+        android:src="@drawable/ic_note_add_black_36dp"
+        android:layout_alignTop="@+id/imgeButtonImport"
+        />
+    <!--android:layout_alignRight="@+id/textViewDay"-->
+    <!--android:layout_alignEnd="@+id/textViewDay" />-->
+
+    <TextView
+        android:id="@+id/textViewAdd"
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        tools:text="Add"
+        android:textSize="15dp"
+        android:layout_alignLeft="@+id/imageButtonAdd"
+        android:layout_alignStart="@+id/imageButtonAdd"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        />
+    <!--android:layout_alignBottom="@+id/imageButtonAdd"-->
+    <!--android:layout_alignRight="@+id/textViewDay"-->
+    <!--android:layout_alignEnd="@+id/textViewDay"-->
+    <!--android:layout_marginBottom="11dp" />-->
+    <TextView
+        android:id="@+id/textViewImport"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        tools:text="Import"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/textViewAdd"
+        android:layout_alignBottom="@+id/textViewAdd"
+        android:layout_alignLeft="@+id/imgeButtonImport"
+        android:layout_alignStart="@+id/imgeButtonImport"
+        android:layout_marginLeft="8dp"/>
+
+
+</RelativeLayout>
