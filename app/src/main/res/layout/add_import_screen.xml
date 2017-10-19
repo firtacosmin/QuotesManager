@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
     android:id="@+id/managerLayout"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -11,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Value:"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_margin="7dp"
         />
     <EditText
@@ -20,7 +21,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/textViewValue"
         android:hint="Author:"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_margin="7dp"
         />
     <EditText
@@ -29,7 +30,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/textViewAuthor"
         android:hint="Type:"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_margin="7dp"
         />
     <EditText
@@ -38,20 +39,20 @@
         android:layout_height="50dp"
         android:layout_below="@+id/textViewType"
         android:hint="Day:"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_margin="7dp"
         />
+
     <ImageButton
         android:id="@+id/imgeButtonImport"
         android:layout_width="65dp"
         android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="100dp"
+        android:src="@drawable/ic_import_export_black_36dp"
         tools:text="Import"
         tools:textAlignment="gravity"
-        android:src="@drawable/ic_import_export_black_36dp"
-        />
+        android:layout_alignBottom="@+id/textViewImport"
+        android:layout_toStartOf="@+id/imageButtonAdd"
+        android:layout_marginEnd="53dp" />
     <ImageButton
         android:id="@+id/imageButtonAdd"
         android:layout_width="65dp"
@@ -59,7 +60,7 @@
         tools:text="Import"
         tools:textAlignment="gravity"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="@+id/imgeButtonImport"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="100dp"
 
         android:src="@drawable/ic_note_add_black_36dp"
@@ -73,7 +74,7 @@
         android:layout_width="60dp"
         android:layout_height="18dp"
         tools:text="Add"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:layout_alignLeft="@+id/imageButtonAdd"
         android:layout_alignStart="@+id/imageButtonAdd"
         android:layout_marginLeft="20dp"
@@ -89,7 +90,7 @@
         android:layout_width="60dp"
         android:layout_height="28dp"
         tools:text="Import"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:layout_alignBaseline="@+id/textViewAdd"
         android:layout_alignBottom="@+id/textViewAdd"
         android:layout_alignLeft="@+id/imgeButtonImport"
@@ -98,3 +99,4 @@
 
 
 </RelativeLayout>
+</layout>
